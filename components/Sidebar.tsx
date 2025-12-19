@@ -46,7 +46,11 @@ export default function Sidebar() {
             {/* Logo/Header */}
             <div className="sidebar-header">
                 <div className="sidebar-logo">🎒</div>
-                <h2 className="sidebar-title">
+                <h2 className="sidebar-title" style={{
+                    wordBreak: 'break-word',
+                    overflowWrap: 'break-word',
+                    hyphens: 'auto'
+                }}>
                     {studentName}'nin<br />
                     Beslenme Çantası
                 </h2>
@@ -77,3 +81,4 @@ export default function Sidebar() {
         </aside>
     )
 }
+
