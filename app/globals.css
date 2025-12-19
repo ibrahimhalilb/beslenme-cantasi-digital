@@ -219,7 +219,7 @@ textarea {
   left: 0;
   top: 0;
   width: 280px;
-  height: 100vh;
+  height: 100dvh;
   background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
   padding: 1.25rem 1rem;
   /* Reduced from 2rem */
@@ -232,7 +232,7 @@ textarea {
   overflow-x: hidden;
 }
 
-.sidebar::-webkit-scrollbar {
+.::-webkit-scrollbar {
   width: 0;
   /* Hide scrollbar completely */
 }
@@ -284,15 +284,9 @@ textarea {
 
 .sidebar-nav {
   flex: 1;
-  /* Take available space */
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  /* Reduced from 0.5rem */
-  margin-bottom: 0.75rem;
-  /* Reduced from 1rem */
-  overflow-y: hidden;
-  /* No scroll */
+  overflow-y: auto;
+  padding-right: 4px; /* scrollbar içerik itmesin */
+   min-height: 0;
 }
 
 .nav-item,
@@ -583,3 +577,4 @@ textarea {
     margin-left: 70px;
   }
 }
+
