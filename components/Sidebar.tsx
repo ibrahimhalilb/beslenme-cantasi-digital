@@ -8,6 +8,7 @@ const navItems = [
     { path: '/', label: 'Ana Sayfa', icon: '🏠' },
     { path: '/tasks', label: 'Görevlerim', icon: '✅' },
     { path: '/notes', label: 'Notlarım', icon: '📝' },
+    { path: '/reminders', label: 'Hatırlatıcılar', icon: '⏰' },
     { path: '/reports', label: 'Raporlar', icon: '📊' },
     { path: '/settings', label: 'Ayarlar', icon: '⚙️' },
 ]
