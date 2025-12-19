@@ -1,11 +1,14 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { supabase, getTurkishDayName } from '@/lib/supabase'
+import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 import DayCard from '@/components/DayCard'
-import NotesSection from '@/components/NotesSection'
-import ReminderCard from '@/components/ReminderCard'
+
+function getTurkishDayName(dayIndex: number): string {
+    const days = ['Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi', 'Pazar']
+    return days[dayIndex]
+}
 
 export default function HomePage() {
     const [user, setUser] = useState<any>(null)
@@ -141,17 +144,6 @@ export default function HomePage() {
                 ))}
             </div>
 
-            {/* Bottom Section */}
-            <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-                gap: '1.5rem',
-                marginBottom: '3rem'
-            }}>
-                <NotesSection />
-                <ReminderCard />
-            </div>
-
             {/* Footer */}
             <footer style={{
                 textAlign: 'center',
@@ -164,3 +156,4 @@ export default function HomePage() {
         </div>
     )
 }
+
