@@ -1,10 +1,16 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import DashboardLayout from '@/components/DashboardLayout'
 
 export const metadata: Metadata = {
     title: 'Beslenme Çantası Digital - Günlük Planlayıcı',
     description: 'Çocuklar için özel hazırlanmış çocuksu ve eğlenceli günlük planlayıcı',
+}
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
 }
 
 export default function RootLayout({
