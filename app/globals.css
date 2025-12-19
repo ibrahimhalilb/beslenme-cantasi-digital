@@ -9,17 +9,17 @@
   --color-pink: #FF6B9D;
   --color-purple: #BA68C8;
   --color-lime: #DCE775;
-  
+
   /* Backgrounds */
   --bg-dark: #2D3142;
   --bg-darker: #1A1E2E;
   --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  
+
   /* Text Colors */
   --text-dark: #2D3142;
   --text-light: #FFFFFF;
   --text-gray: #8892AB;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -103,13 +103,33 @@ textarea {
 }
 
 /* Day Colors */
-.day-monday { background-color: var(--color-yellow); }
-.day-tuesday { background-color: var(--color-orange); }
-.day-wednesday { background-color: var(--color-blue); }
-.day-thursday { background-color: var(--color-green); }
-.day-friday { background-color: var(--color-pink); }
-.day-saturday { background-color: var(--color-purple); }
-.day-sunday { background-color: var(--color-lime); }
+.day-monday {
+  background-color: var(--color-yellow);
+}
+
+.day-tuesday {
+  background-color: var(--color-orange);
+}
+
+.day-wednesday {
+  background-color: var(--color-blue);
+}
+
+.day-thursday {
+  background-color: var(--color-green);
+}
+
+.day-friday {
+  background-color: var(--color-pink);
+}
+
+.day-saturday {
+  background-color: var(--color-purple);
+}
+
+.day-sunday {
+  background-color: var(--color-lime);
+}
 
 /* Animations */
 @keyframes fadeIn {
@@ -117,6 +137,7 @@ textarea {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -124,9 +145,12 @@ textarea {
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -151,8 +175,13 @@ textarea {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Responsive */
@@ -160,7 +189,7 @@ textarea {
   .container {
     padding: 1rem;
   }
-  
+
   .card {
     padding: 1rem;
   }
@@ -342,20 +371,20 @@ textarea {
     width: 240px;
     padding: 1.5rem 0.75rem;
   }
-  
+
   .sidebar-title {
     font-size: 1.25rem;
   }
-  
+
   .nav-item {
     padding: 0.875rem 1rem;
     font-size: 0.95rem;
   }
-  
+
   .main-content {
     margin-left: 240px;
   }
-  
+
   .page-title {
     font-size: 2rem;
   }
@@ -366,36 +395,22 @@ textarea {
     width: 70px;
     padding: 1rem 0.5rem;
   }
-  
-  .sidebar-header {
-    padding: 0.5rem 0;
+
+  .nav-label {
+    display: none;
   }
-  
+
   .sidebar-title,
   .sidebar-subtitle {
     display: none;
   }
-  
-  .sidebar-logo {
-    font-size: 2.5rem;
-  }
-  
-  .nav-item,
-  .logout-btn {
-    justify-content: center;
-    padding: 1rem 0.5rem;
-  }
-  
-  .nav-label {
-    display: none;
-  }
-  
+
+
   .nav-icon {
     font-size: 1.75rem;
   }
-  
+
   .main-content {
     margin-left: 70px;
   }
 }
-
