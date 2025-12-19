@@ -220,21 +220,10 @@ textarea {
   top: 0;
   width: 280px;
   height: 100dvh;
-  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-  padding: 1.25rem 1rem;
-  /* Reduced from 2rem */
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-lg);
-  z-index: 100;
-  overflow-y: hidden;
-  /* Hide scrollbar */
-  overflow-x: hidden;
-}
-
-.::-webkit-scrollbar {
-  width: 0;
-  /* Hide scrollbar completely */
+  padding: 1.25rem 1rem;
+  overflow: hidden; /* çerçeve taşmasın */
 }
 
 .sidebar::-webkit-scrollbar-track {
@@ -577,4 +566,5 @@ textarea {
     margin-left: 70px;
   }
 }
+
 
